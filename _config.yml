@@ -1,0 +1,39 @@
+# GitHub Pages (Jekyll) 最小設定
+# Settings > Pages > Source: Deploy from a branch / Branch: main / Folder: / (root)
+
+title: 若者トレンドNEWS
+description: >-
+  ネットで話題のトレンドを毎朝まとめて追える、マーケター向けニュースアプリ。
+  プライバシーポリシー・利用規約・サポート窓口はこちら。
+lang: ja
+
+# ★ここは公開URLと必ず一致させること。
+#   プロジェクトページ(https://<ユーザー名>.github.io/<リポジトリ名>/)では
+#   GitHub Pages が baseurl を自動設定しないため、明示しないと
+#   relative_url を使った内部リンクが軒並み 404 になる。
+#   404 のポリシーURLは App Store の審査で確実にリジェクトされる。
+url: "https://kazupo0910.github.io"
+baseurl: "/wakamono-trend-news"
+
+# GitHub Pages が標準サポートするテーマ
+theme: minima
+minima:
+  skin: classic
+  date_format: "%Y年%m月%d日"
+
+# ヘッダーのナビゲーションに出すページ
+header_pages:
+  - privacy.md
+  - terms.md
+
+plugins:
+  - jekyll-seo-tag
+
+# ブログ機能は使わないので無効化
+show_excerpts: false
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
